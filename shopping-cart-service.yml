@@ -6,3 +6,18 @@ spring:
   jpa:
     hibernate:
       ddl-auto: validate
+
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8071/eureka/
+    instance:
+      prefer-ip-address: true	
+
+management:
+  endpoint:
+    shutdown:
+      enabled: true
